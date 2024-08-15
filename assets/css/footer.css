@@ -1,0 +1,25 @@
+footer{
+    margin: 0;
+    padding: 0;
+    background: var(--primary-color);
+    width: 100%;
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    color: var(--tertiary-color);
+    text-decoration: none;
+}
+
+.dark-mode footer {
+    background: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+.dark-mode footer p {
+    color: var(--primary-color);
+    text-decoration: none;
+}
