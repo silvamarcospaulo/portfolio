@@ -13,14 +13,15 @@
    <link rel="stylesheet" href="./assets/css/footer.css">
 
    <script src="./assets/js/color_swifter.js" defer></script>
-   <script src="./assets/js/menuHamburguer.js" defer></script>
+   <script src="./assets/js/menu.js" defer></script>
 </head>
 
 <body>
    <header class="header">
       <nav class="nav">
-         <p class="logo">Marcos Paulo Silva</p>
-         <button class="menu-hamburguer" aria-label="Menu"></button>
+         <div class="logo">
+            <p>Marcos Paulo Silva</p>
+         </div>
          <ol class="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">Sobre</a></li>
@@ -28,7 +29,8 @@
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#contacts">Contato</a></li>
          </ol>
-         <button style="height: 20px; width: 20px;" id="switch" aria-label="Dark Mode"></button>
+         <button id="switch" aria-label="Dark Mode"></button>
+         <button class="menu" aria-label="Menu"></button>
       </nav>
    </header>
 
@@ -198,6 +200,7 @@
             </ol>
          </div>
       </section>
+
    </main>
 
    <footer>

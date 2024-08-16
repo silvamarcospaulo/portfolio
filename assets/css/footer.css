@@ -1,7 +1,7 @@
 footer{
     margin: 0;
     padding: 0;
-    background: var(--primary-color);
+    background: var(--background);
     width: 100%;
     min-height: 5vh;
     display: flex;
@@ -10,16 +10,16 @@ footer{
 }
 
 footer p {
-    color: var(--tertiary-color);
+    color: var(--text);
     text-decoration: none;
 }
 
 .dark-mode footer {
-    background: var(--tertiary-color);
+    background: var(--text);
     color: var(--primary-color);
 }
 
 .dark-mode footer p {
-    color: var(--primary-color);
+    color: var(--background);
     text-decoration: none;
 }

@@ -6,68 +6,83 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    background: var(--background);
+    color: var(--text);
+}
+
 h1 {
     font-weight: 600;
-    color: var(--tertiary-color);
+    color: var(--text);
 }
 
 h2 {
     font-weight: 400;
-    color: var(--tertiary-color);
+    color: var(--text);
 }
 
 h3 {
     font-weight: 300;
-    color: var(--quaternary-color);
+    color: var(--text);
 }
 
 h4 {
     font-weight: 200;
-    color: var(--quaternary-color);
+    color: var(--text);
 }
 
 p {
     font-weight: 200;
-    color: var(--quaternary-color);
+    color: var(--text);
 }
 
 a {
     font-weight: 200;
-    color: var(--primary-color);
+    color: var(--text);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--quaternary-color);
+    color: var(--link);
+}
+
+.dark-mode body {
+    background: var(--text);
 }
 
 .dark-mode h1 {
-    font-weight: 700;
-    color: var(--tertiary-color);
+    font-weight: 600;
+    color: var(--background);
 }
 
 .dark-mode h2 {
-    font-weight: 600;
-    color: var(--tertiary-color);
+    font-weight: 400;
+    color: var(--background);
 }
 
 .dark-mode h3 {
-    font-weight: 500;
-    color: var(--tertiary-color);
+    font-weight: 300;
+    color: var(--background);
 }
 
 .dark-mode h4 {
-    font-weight: 400;
-    color: var(--tertiary-color);
+    font-weight: 200;
+    color: var(--background);
 }
 
 .dark-mode p {
-    font-weight: 300;
-    color: var(--tertiary-color);
+    font-weight: 200;
+    color: var(--background);
 }
 
 .dark-mode a {
-    font-weight: 300;
-    color: var(--tertiary-color);
+    font-weight: 200;
+    color: var(--background);
+    text-decoration: none;
+}
+
+.dark-mode a:hover {
+    font-weight: 200;
+    color: var(--link);
     text-decoration: none;
 }

@@ -1,116 +1,85 @@
 header {
-    background: var(--primary-color);
-    color: var(--tertiary-color);
     height: 10vh;
     width: 100%;
     margin: 0;
-
-    padding-inline: 16px;
-    
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-header a {
-    color: var(--tertiary-color);
-    text-decoration: none;
-}
-
-header p {
-    color: var(--tertiary-color);
-    text-decoration: none;
-}
-
-header a:hover {
-    color: var(--quaternary-color);
-}
-
-.dark-mode header {
-    background: var(--tertiary-color);
-    color: var(--primary-color);
-}
-
-.dark-mode header a, .dark-mode .nav-list a {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.dark-mode header p {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.dark-mode header a:hover {
-    color: var(--color);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
 
 .nav {
-    max-width: 80%;
-    width: 100%;
-    height: 120px;
+    width: 80%;
+    height: 100%;
     margin-inline: auto;
-
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
     align-items: center;
 }
 
 .nav-list {
-    display: flex;
-    gap: 32px;
+    height: 100%;
+    width: 100%;
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav-list a {
-    font-size: 18px;
-    color: var(--tertiary-color);
-    padding-block: 16px;
+.nav-list li {
+    display: flex;
+    flex-grow: 1;
+    text-align: center;
+    justify-self: center;
+    align-items: center;
 }
 
 .logo {
-    font-size: 48px;
-}
-
-.menu-hamburguer {
     display: none;
-    border: none;
-    background: none;
-    border-top: 3px solid var(--tertiary-color);
-    cursor: pointer;
+    visibility: none;
 }
 
-.dark-mode .menu-hamburguer{
-    border-top: 3px solid var(--primary-color);
-    background-color: var(--primary-color);
+.menu {
+    display: none;
+    visibility: hidden;
+    flex-grow: 0;
+    height: 20px;
+    width: 20px;
 }
 
-.dark-mode .nav-list {
-    background-color: var(--terciary-color);
-}
-
-.menu-hamburguer::before,
-.menu-hamburguer::after {
-    content: " ";
-    display: block;
-    width: 30px;
-    height: 3px;
-    background-color: var(--tertiary-color);
-    margin-top: 5px;
-    position: relative;
-    transition: 0.3s;
+#switch {
+    flex-grow: 0;
+    height: 20px;
+    width: 20px;
 }
 
 @media (max-width: 750px) {
 
-    .nav{
-        height: 10vh;
+    header {
+        background: var(--background);
+        position: fixed;
     }
 
-    .menu-hamburguer {
+    .nav {
+        height: 10vh;
+        width: 80%;
+        position: fixed;
+    }
+
+    .menu {
         display: block;
-        z-index: 1;
+        visibility: visible;
+        height: 20px;
+        width: 20px;
+        z-index: 3;
     }
 
     .nav-list {
@@ -119,15 +88,15 @@ header a:hover {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: var(--primary-color);
+        background: var(--background);
         clip-path: circle(100px at 90% -15%);
         transition: 0.5s ease-out;
-
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
-        gap: 0;
+        align-items: self-start;
         pointer-events: none;
+        z-index: 2;
+        position: fixed;
     }
 
     .nav-list a {
@@ -139,23 +108,17 @@ header a:hover {
         pointer-events: all;
     }
 
-    .nav-active .menu-hamburguer {
-        position: fixed;
-        top: 26px;
-        right: 16px;
-        border-top-color: transparent;
-    }
-
-    .nav-active .menu-hamburguer::before {
-        transform: rotate(135deg);
-    }
-
-    .nav-active .menu-hamburguer::after {
-        transform: rotate(-135deg);
-        top: -7px;
-    }
-
     .logo {
-        font-size: 20px;
+        display: flex;
+        visibility: visible;
+        flex-grow: 2;
+    }
+
+    .dark-mode .nav-list {
+        background: var(--text);
+    }
+
+    .dark-mode header {
+        background: var(--text);
     }
 }

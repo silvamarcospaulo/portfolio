@@ -12,7 +12,6 @@
 #home {
     min-height: 100vh;
     width: 100%;
-    background: var(--secundary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,7 +20,6 @@
 #about {
     min-height: 50vh;
     width: 100%;
-    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +28,6 @@
 #professional-experience {
     min-height: 50vh;
     width: 100%;
-    background: var(--secundary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +36,6 @@
 #projects {
     min-height: 100vh;
     width: 100%;
-    background: var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,38 +48,21 @@
 #contacts {
     min-height: 50vh;
     width: 100%;
-    background: var(--tertiary-color);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#contacts p,
-#contacts a,
-#contacts h1,
-#contacts h3,
-#contacts h2,
-#contacts h3,
-#contacts h4 {
-    color: var(--primary-color);
+section img {
+    filter: invert(100%);
 }
 
-#contacts a:hover {
-    color: var(--quaternary-color);
-}
-
-.dark-mode #home,
-.dark-mode #professional-experience,
-.dark-mode #contacts{
-    background-color: var(--gelo);
-}
-
-.dark-mode #about,
-.dark-mode #projects{
-    background-color: var(--color);
-}
-
-main li{
+main li {
     list-style: none;
-    padding: 10px  0px;
+    padding: 10px 0px;
+    
+}
+
+.dark-mode section img {
+    filter: invert(0%);
 }
