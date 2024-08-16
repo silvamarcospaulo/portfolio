@@ -13,13 +13,3 @@ footer p {
     color: var(--text);
     text-decoration: none;
 }
-
-.dark-mode footer {
-    background: var(--text);
-    color: var(--primary-color);
-}
-
-.dark-mode footer p {
-    color: var(--background);
-    text-decoration: none;
-}

@@ -54,7 +54,7 @@
 }
 
 section img {
-    filter: invert(100%);
+    
 }
 
 main li {
@@ -64,5 +64,5 @@ main li {
 }
 
 .dark-mode section img {
-    filter: invert(0%);
+    filter: invert(100%);
 }

@@ -6,6 +6,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     background: var(--background);
     color: var(--text);
@@ -44,45 +48,4 @@ a {
 
 a:hover {
     color: var(--link);
-}
-
-.dark-mode body {
-    background: var(--text);
-}
-
-.dark-mode h1 {
-    font-weight: 600;
-    color: var(--background);
-}
-
-.dark-mode h2 {
-    font-weight: 400;
-    color: var(--background);
-}
-
-.dark-mode h3 {
-    font-weight: 300;
-    color: var(--background);
-}
-
-.dark-mode h4 {
-    font-weight: 200;
-    color: var(--background);
-}
-
-.dark-mode p {
-    font-weight: 200;
-    color: var(--background);
-}
-
-.dark-mode a {
-    font-weight: 200;
-    color: var(--background);
-    text-decoration: none;
-}
-
-.dark-mode a:hover {
-    font-weight: 200;
-    color: var(--link);
-    text-decoration: none;
 }
