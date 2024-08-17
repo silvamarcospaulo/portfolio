@@ -1,7 +1,17 @@
-const menuHamburguer = document.querySelector(".menu");
+const showNavBar = document.querySelector(".menu");
 const nav = document.querySelector(".nav");
-const rotateMenu = document.querySelector(".menu");
+const rotateMenuIcon = document.querySelector(".menu");
+const navLinks = document.querySelectorAll(".nav-list a");
 
-menuHamburguer.addEventListener("click", () => nav.classList.toggle("nav-active"));
 
-rotateMenu.addEventListener("click", () => nav.classList.toggle("change"))
+showNavBar.addEventListener("click", () => {
+    nav.classList.toggle("nav-active");
+    rotateMenuIcon.classList.toggle("change");
+});
+
+navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("nav-active");
+        rotateMenuIcon.classList.remove("change");
+    });
+});
