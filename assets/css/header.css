@@ -135,6 +135,7 @@ header {
         pointer-events: all;
     }
 
+    
     .logo {
         display: flex;
         visibility: visible;
