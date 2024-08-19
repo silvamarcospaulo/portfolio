@@ -10,7 +10,6 @@
     --link: #0066FF;
 }
 
-
 @media (prefers-color-scheme: dark) {
     .dark-mode:root {
         --background: #f5f5f5;
@@ -25,6 +24,13 @@
     }
 }
 
+#dark-mode-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #switch {
     display: none;
 }
@@ -32,12 +38,13 @@
 .slider {
     position: relative;
     display: inline-block;
-    width: 35px;
+    width: 45px;
     height: 25px;
-    background-color: var(--text);
+    background: var(--text);
     border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0.4s;
+    transition: background-color 0.5s;
+    z-index: 1;
 }
 
 .slider:before {
@@ -47,15 +54,34 @@
     width: 16px;
     left: 4px;
     bottom: 4px;
-    background-color: var(--background);
+    background: var(--background);
     border-radius: 50%;
     transition: transform 0.4s;
 }
 
-#switch:checked+.slider {
+#switch:checked + .slider {
     background-color: var(--text);
 }
 
-#switch:checked+.slider:before {
-    transform: translateX(10px);
+#switch:checked + .slider:before {
+    transform: translateX(20px);
+}
+
+#sun {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    width: 10px;
+    height: 10px;
+    right: 8px;
+}
+
+#moon {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    width: 9px;
+    height: 9px;
+    filter: invert(100%);
+    left: 8px;
 }

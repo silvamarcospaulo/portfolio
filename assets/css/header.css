@@ -82,7 +82,7 @@ header {
         visibility: visible;
         height: 50px;
         width: 50px;
-        z-index: 3;
+        z-index: 5;
         display: inline-block;
         cursor: pointer;
     }
@@ -122,7 +122,7 @@ header {
         justify-content: space-around;
         align-items: self-start;
         pointer-events: none;
-        z-index: 2;
+        z-index: 4;
         position: fixed;
     }
 
