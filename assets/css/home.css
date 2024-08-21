@@ -25,6 +25,20 @@
     font-weight: 600;
 }
 
+#title h1:last-of-type {
+    margin-left: -1000px;
+    animation: slidein 3s forwards;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -1000px;
+    }
+    to {
+        margin-left: 0;
+    }
+}
+
 #subtitle h2 {
     font-size: 53px;
     font-weight: 100;
