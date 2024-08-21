@@ -2,25 +2,30 @@
     --background: #f5f5f5;
     --text: #000000;
     --link: #0066FF;
+    --filter: invert(0%);
 }
 
 .dark-mode:root {
     --background: #000000;
     --text: #f5f5f5;
     --link: #0066FF;
+    --filter: invert(100%);
+    
 }
 
 @media (prefers-color-scheme: dark) {
-    .dark-mode:root {
-        --background: #f5f5f5;
-        --text: #000000;
-        --link: #0066FF;
-    }
-
     :root {
         --background: #000000;
         --text: #f5f5f5;
         --link: #0066FF;
+        --filter: invert(100%);
+    }
+
+    .dark-mode:root {
+        --background: #f5f5f5;
+        --text: #000000;
+        --link: #0066FF;
+        --filter: invert(0%);
     }
 }
 
@@ -73,6 +78,7 @@
     z-index: 2;
     width: 10px;
     height: 10px;
+    filter: var(--filter);
     right: 8px;
 }
 
@@ -82,6 +88,6 @@
     z-index: 2;
     width: 9px;
     height: 9px;
-    filter: invert(100%);
+    filter: var(--filter);
     left: 8px;
 }

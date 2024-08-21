@@ -46,7 +46,7 @@
 }
 
 section img {
-    filter: invert(100%);
+    filter: var(--filter);
 }
 
 main li {
@@ -56,7 +56,7 @@ main li {
 }
 
 .dark-mode section img {
-    filter: invert(0%);
+    filter: var(--filter);
 }
 
 #projects a h3:hover {
