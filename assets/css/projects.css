@@ -1,0 +1,69 @@
+#projects {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative; /* Adiciona contexto de empilhamento para os botões */
+}
+
+.container_projects {
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.container_carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    text-align: justify;
+    background-color: var(--background);
+    border-color: var(--text);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.5s;
+    transform: translate(-50%, -50%);
+}
+
+#next,
+#prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text);
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    z-index: 10;
+}
+
+#next {
+    right: 1px;
+}
+
+#prev {
+    left: 1px;
+}

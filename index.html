@@ -18,10 +18,12 @@
    <link rel="stylesheet" href="./assets/css/header.css">
    <link rel="stylesheet" href="./assets/css/home.css">
    <link rel="stylesheet" href="./assets/css/main.css">
+   <link rel="stylesheet" href="./assets/css/projects.css">
    <link rel="stylesheet" href="./assets/css/footer.css">
 
    <script src="./assets/js/color_swifter.js" defer></script>
    <script src="./assets/js/menu.js" defer></script>
+   <script src="./assets/js/projects_carousel.js" defer></script>
 </head>
 
 <body>
@@ -122,57 +124,70 @@
       </section>
 
       <section id="projects">
-         <div class="container">
-            <ol>
-               <li>
-                  <h2>Projetos</h2>
-               </li>
-               <li>
+         <div class="container_projects">
+            <h2>Projetos</h2>
+            <div class="container_carousel">
+               <div class="item">
                   <a href="https://github.com/silvamarcospaulo/Cod3rsGrowth" target="_blank">
                      <h3>Cod3rsGrowth</h3>
                   </a>
-                  <p>Desenvolvimento de um projeto utilizando Arquitetura de Cebola, C#, .NET, ASP.NET, Banco de Dados
-                     SQL
-                     Server. Foram desenvolvidas habilidades de desenvolvimento em C#, .NET, conhecimentos de
-                     gerenciador
-                     de pacotes NuGet, criação de APIs Rest com ASP.NET, modelagem e implementação de Banco de Dados
-                     Relacionais, desenvolvimento de aplicações Desktop com Windows Forms etc.</p>
-               </li>
-               <li>
+                  <p>
+                     Desenvolvimento de um projeto utilizando Arquitetura de Cebola, C#, .NET, ASP.NET, Banco
+                     de Dados
+                     SQL Server. Foram desenvolvidas habilidades de desenvolvimento em C#, .NET, conhecimentos
+                     de
+                     gerenciador de pacotes NuGet, criação de APIs Rest com ASP.NET, modelagem e implementação
+                     de Banco
+                     de Dados Relacionais, desenvolvimento de aplicações Desktop com Windows Forms etc.
+                  </p>
+               </div>
+               <div class="item">
                   <a href="https://github.com/silvamarcospaulo/Desafio-Programa-Estagio-do-Dev-Training-Tunts.Rocks-2024"
                      target="_blank">
                      <h3>Desafio Dev Training Tunts.Rocks 2024</h3>
                   </a>
-                  <p>Este projeto faz parte da primeira fase do processo seletivo de Estágio do Dev Training Program da
-                     Tunts.Rocks 2024, na qual foi proposto que o candidato desenvolvesse uma aplicação na linguagem de
-                     programação de preferência do candidato, no meu caso a linguagem escolhida foi Java. A aplicação
-                     deve
-                     ser capaz de ler uma planilha do Google Sheets, buscar as informações necessárias, calcular e
-                     escrever
-                     o resultado na planilha.</p>
-               </li>
-               <li>
+                  <p>
+                     Este projeto faz parte da primeira fase do processo seletivo de Estágio do Dev Training
+                     Program da
+                     Tunts.Rocks 2024, na qual foi proposto que o candidato desenvolvesse uma aplicação na
+                     linguagem de
+                     programação de preferência do candidato, no meu caso a linguagem escolhida foi Java. A
+                     aplicação
+                     deve ser capaz de ler uma planilha do Google Sheets, buscar as informações necessárias,
+                     calcular e
+                     escrever o resultado na planilha.
+                  </p>
+               </div>
+               <div class="item">
                   <a href="https://github.com/silvamarcospaulo/Projeto_DIO-Java-Projeto-Final-Explorando_Padroes_de_Projetos/tree/main"
                      target="_blank">
                      <h3>MovieBox - Consumindo uma APIWeb com Java</h3>
                   </a>
-                  <p>Foi desenvolvida uma aplicação que recebe dados de uma API Web gratuita (OMDB) utilizando o
-                     terminal
-                     com interface de entrada de dados para a pesquisa, possibilitando o usuário consultar os dados de
-                     filmes e séries, adicionar à sua lista de assistidos e avaliar a obra. Foram desenvolvidas
-                     habilidades
-                     em desenvolvimento com Java, consumo de APIs Web, JSON, utilização de Maven etc.</p>
-
-               </li>
-               <li>
+                  <p>
+                     Foi desenvolvida uma aplicação que recebe dados de uma API Web gratuita (OMDB) utilizando
+                     o
+                     terminal com interface de entrada de dados para a pesquisa, possibilitando o usuário
+                     consultar os
+                     dados de filmes e séries, adicionar à sua lista de assistidos e avaliar a obra. Foram
+                     desenvolvidas
+                     habilidades em desenvolvimento com Java, consumo de APIs Web, JSON, utilização de Maven
+                     etc.
+                  </p>
+               </div>
+               <div class="item">
                   <a href="https://github.com/silvamarcospaulo/SAP-UI5-Walkthrougth" target="_blank">
                      <h3>SAP UI5 Walkthrough</h3>
                   </a>
-                  <p>Documentação disponibilizada pela SAP a respeito de SAP UI5. Entendendo sobre SAP UI5, desde o
+                  <p>
+                     Documentação disponibilizada pela SAP a respeito de SAP UI5. Entendendo sobre SAP UI5,
+                     desde o
                      primeiro Hello World até criação de componentes, testes unitários com QUnit, testes OPA,
-                     responsividade, acessibilidade etc.</p>
-               </li>
-            </ol>
+                     responsividade, acessibilidade etc.
+                  </p>
+               </div>
+               <button id="next">></button>
+               <button id="prev"><</button>
+            </div>
          </div>
       </section>
 
