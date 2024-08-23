@@ -7,7 +7,9 @@ header {
     align-content: center;
     justify-content: center;
     align-items: center;
-    z-index: 100000;
+    z-index: 100000000;
+    position: fixed;
+    background: var(--background);
 }
 
 .nav {

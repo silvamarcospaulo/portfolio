@@ -40,13 +40,15 @@
             <li><a href="#professional-experience">Experiências profissionais</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#contacts">Contato</a></li>
+            <li>
+               <div id="dark-mode-switch">
+                  <input id="switch" type="checkbox" role="switch">
+                  <label for="switch" class="slider"></label>
+                  <img id="moon" src="./assets/images/moon-stars.svg" alt="Dark Mode">
+                  <img id="sun" src="./assets/images/sun.svg" alt="Sun Mode">
+               </div>
+            </li>
          </ol>
-         <div id="dark-mode-switch">
-            <input id="switch" type="checkbox" role="switch">
-            <label for="switch" class="slider"></label>
-            <img id="moon" src="./assets/images/moon-stars.svg" alt="Dark Mode">
-            <img id="sun" src="./assets/images/sun.svg" alt="Sun Mode">
-         </div>
 
          <div class="menu">
             <div class="bar-top"></div>
@@ -127,69 +129,82 @@
          <div class="container_projects">
             <h2>Projetos</h2>
             <div class="container_carousel">
-               <div class="item">
-                  <a href="https://github.com/silvamarcospaulo/Cod3rsGrowth" target="_blank">
-                     <h3>Cod3rsGrowth</h3>
-                  </a>
-                  <p>
-                     Desenvolvimento de um projeto utilizando Arquitetura de Cebola, C#, .NET, ASP.NET, Banco
-                     de Dados
-                     SQL Server. Foram desenvolvidas habilidades de desenvolvimento em C#, .NET, conhecimentos
-                     de
-                     gerenciador de pacotes NuGet, criação de APIs Rest com ASP.NET, modelagem e implementação
-                     de Banco
-                     de Dados Relacionais, desenvolvimento de aplicações Desktop com Windows Forms etc.
-                  </p>
+               <div class="project_item">
+                  <div class="project_title">
+                     <a href="https://github.com/silvamarcospaulo/Cod3rsGrowth" target="_blank">
+                        <h3>Cod3rsGrowth</h3>
+                     </a>
+                  </div>
+                  <div class="project_text">
+                     <p>
+                        Desenvolvimento de um projeto utilizando Arquitetura de Cebola, C#, .NET, ASP.NET, Banco
+                        de Dados SQL Server. Foram desenvolvidas habilidades de desenvolvimento em C#, .NET, conhecimentos
+                        de gerenciador de pacotes NuGet, criação de APIs Rest com ASP.NET, modelagem e implementação
+                        de Banco de Dados Relacionais, desenvolvimento de aplicações Desktop com Windows Forms etc.
+                     </p>
+                  </div>
+                  <div class="project_image">
+                  </div>
                </div>
-               <div class="item">
-                  <a href="https://github.com/silvamarcospaulo/Desafio-Programa-Estagio-do-Dev-Training-Tunts.Rocks-2024"
-                     target="_blank">
-                     <h3>Desafio Dev Training Tunts.Rocks 2024</h3>
-                  </a>
-                  <p>
-                     Este projeto faz parte da primeira fase do processo seletivo de Estágio do Dev Training
-                     Program da
-                     Tunts.Rocks 2024, na qual foi proposto que o candidato desenvolvesse uma aplicação na
-                     linguagem de
-                     programação de preferência do candidato, no meu caso a linguagem escolhida foi Java. A
-                     aplicação
-                     deve ser capaz de ler uma planilha do Google Sheets, buscar as informações necessárias,
-                     calcular e
-                     escrever o resultado na planilha.
-                  </p>
+               <div class="project_item">
+                  <div class="project_title">
+                     <a href="https://github.com/silvamarcospaulo/Desafio-Programa-Estagio-do-Dev-Training-Tunts.Rocks-2024"
+                        target="_blank">
+                        <h3>Desafio Dev Training Tunts.Rocks 2024</h3>
+                     </a>
+                  </div>
+                  <div class="project_text">
+                     <p>
+                        Este projeto faz parte da primeira fase do processo seletivo de Estágio do Dev Training
+                        Program da Tunts.Rocks 2024, na qual foi proposto que o candidato desenvolvesse uma aplicação na
+                        linguagem de programação de preferência do candidato, no meu caso a linguagem escolhida foi Java. A
+                        aplicação deve ser capaz de ler uma planilha do Google Sheets, buscar as informações necessárias,
+                        calcular e escrever o resultado na planilha.
+                     </p>
+                  </div>
+                  <div class="project_image">
+                  </div>
                </div>
-               <div class="item">
-                  <a href="https://github.com/silvamarcospaulo/Projeto_DIO-Java-Projeto-Final-Explorando_Padroes_de_Projetos/tree/main"
-                     target="_blank">
-                     <h3>MovieBox - Consumindo uma APIWeb com Java</h3>
-                  </a>
-                  <p>
-                     Foi desenvolvida uma aplicação que recebe dados de uma API Web gratuita (OMDB) utilizando
-                     o
-                     terminal com interface de entrada de dados para a pesquisa, possibilitando o usuário
-                     consultar os
-                     dados de filmes e séries, adicionar à sua lista de assistidos e avaliar a obra. Foram
-                     desenvolvidas
-                     habilidades em desenvolvimento com Java, consumo de APIs Web, JSON, utilização de Maven
-                     etc.
-                  </p>
+               <div class="project_item">
+                  <div class="project_title">
+                     <a href="https://github.com/silvamarcospaulo/Projeto_DIO-Java-Projeto-Final-Explorando_Padroes_de_Projetos/tree/main"
+                        target="_blank">
+                        <h3>MovieBox - Consumindo uma APIWeb com Java</h3>
+                     </a>
+                  </div>
+                  <div class="project_text">
+                     <p>
+                        Foi desenvolvida uma aplicação que recebe dados de uma API Web gratuita (OMDB) utilizando
+                        o terminal com interface de entrada de dados para a pesquisa, possibilitando o usuário
+                        consultar os dados de filmes e séries, adicionar à sua lista de assistidos e avaliar a obra. Foram
+                        desenvolvidas habilidades em desenvolvimento com Java, consumo de APIs Web, JSON, utilização de Maven
+                        etc.
+                     </p>
+                  </div>
+                  <div class="project_image">
+                  </div>
                </div>
-               <div class="item">
-                  <a href="https://github.com/silvamarcospaulo/SAP-UI5-Walkthrougth" target="_blank">
-                     <h3>SAP UI5 Walkthrough</h3>
-                  </a>
-                  <p>
-                     Documentação disponibilizada pela SAP a respeito de SAP UI5. Entendendo sobre SAP UI5,
-                     desde o
-                     primeiro Hello World até criação de componentes, testes unitários com QUnit, testes OPA,
-                     responsividade, acessibilidade etc.
-                  </p>
+               <div class="project_item">
+                  <div class="project_title">
+                     <a href="https://github.com/silvamarcospaulo/SAP-UI5-Walkthrougth" target="_blank">
+                        <h3>SAP UI5 Walkthrough</h3>
+                     </a>
+                  </div>
+                  <div class="project_text">
+                     <p>
+                        Documentação disponibilizada pela SAP a respeito de SAP UI5. Entendendo sobre SAP UI5,
+                        desde o primeiro Hello World até criação de componentes, testes unitários com QUnit, testes OPA,
+                        responsividade, acessibilidade etc.
+                     </p>
+                  </div>
+                  <div class="project_image">
+                  </div>
                </div>
                <button id="next">></button>
                <button id="prev"><</button>
             </div>
          </div>
-      </section>
+      </section>      
 
       <section id="contacts">
          <div class="container">
@@ -221,7 +236,8 @@
                <li>
                   <a class="contacts-link" href="https://www.instagram.com/souomarcospaulo/" target="_blank"
                      title="Instagram">
-                     <img class="contacts-ico" src="./assets/images/instagram.svg"> @souomarcospaulo
+                     <img class="contacts-ico" src="./assets/images/instagram.svg">
+                     @souomarcospaulo
                   </a>
                </li>
                <li>

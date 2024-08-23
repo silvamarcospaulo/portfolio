@@ -1,4 +1,4 @@
-let items = document.querySelectorAll(".container_carousel .item");
+let items = document.querySelectorAll(".container_carousel .project_item");
 let next = document.querySelector("#next");
 let prev = document.querySelector("#prev");
 
